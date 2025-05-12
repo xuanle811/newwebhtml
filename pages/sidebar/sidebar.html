@@ -1,0 +1,39 @@
+<aside class="sider">
+    <link rel="stylesheet" href="pages/sidebar/sidebar.css">
+    <div class="menu-container">
+        <div class="title-menu-container">
+            <span class="title-menu-text">N3TW0RK F0R3NS1C</span>
+        </div>
+
+    <ul class="menu">
+      <li class="menu-item">
+        <button class="submenu-title" onclick="toggleSubmenu('dashboard-submenu')">
+          <img src="../../assets/icons/dashboard.png" class="image-icon" />
+          Dashboard
+        </button>
+        <ul class="submenu" id="dashboard-submenu" style="display: none;">
+          <li class="menu-item">
+            <button class="submenu-title" onclick="toggleSubmenu('log-submenu')">
+              <img src="../../assets/icons/dashboard.png" class="image-icon" />
+              Log
+            </button>
+            <ul class="submenu" id="log-submenu" style="display: none;">
+              <li>
+                <button class="action-btn submenu-title sub-item">
+                  <!-- <img src="assets/icons/plus.png" class="icon small" /> -->
+                  + Upload File
+                </button>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="action-btn link-btn" onclick="showLogPage()">
+                  <!-- <img src="assets/icons/plus.png" class="icon small" /> -->
+                  Show Data
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</aside>

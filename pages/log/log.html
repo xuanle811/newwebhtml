@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Log Page</title>
+  <link rel="stylesheet" href="pages/log/log.css">
+</head>
+<body>
+
+  <!-- Loading Indicator -->
+  <div id="loading-indicator" style="display: none;">
+    <div class="spin">Loading...</div>
+  </div>
+
+  <div class="page">
+    <div class="page-header">Dashboard</div>
+    <div class="page-container">
+      <div class="page-content">
+        <!-- Row containing button and Tab -->
+        <div class="toolbar">
+          <button id="toggle-view-btn">Switch to Table</button>
+          <div class="log-tabs">
+            <button class="log-tab">DNSmasq Log</button>
+            <button class="log-tab">Audit Log</button>
+            <button class="log-tab">Apache Log</button>
+            <button class="log-tab">Undefined</button>
+          </div>
+        </div>
+        <div id="log-table-container" style="display: none; margin-top: 20px;">
+          <table>
+            <thead>
+              <tr>
+                <th>Event Name</th>
+                <th>Timestamp</th>
+                <th>Label</th>
+                <th>Anomaly</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Event A</td>
+                <td>2025-05-10 14:23:11</td>
+                <td>Anomaly</td>
+                <td>Anomaly</td>
+              </tr>
+              <tr>
+                <td>Event B</td>
+                <td>2025-05-10 14:25:33</td>
+                <td>Normal</td>
+                <td>Normal</td>
+              </tr>
+              <tr>
+                <td>Event C</td>
+                <td>2025-05-10 14:27:11</td>
+                <td>Anomaly</td>
+                <td>Anomaly</td>
+              </tr>
+              <tr>
+                <td>Event D</td>
+                <td>2025-05-10 14:35:33</td>
+                <td>Normal</td>
+                <td>Normal</td>
+              </tr>
+              <tr>
+                <td>Event E</td>
+                <td>2025-05-10 14:23:11</td>
+                <td>Anomaly</td>
+                <td>Anomaly</td>
+              </tr>
+              <tr>
+                <td>Event F</td>
+                <td>2025-05-10 14:45:33</td>
+                <td>Normal</td>
+                <td>Normal</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="chart-section" style="display: none; margin-top: 20px;">
+          <canvas id="line-chart" style="margin-bottom: 40px;"></canvas>
+          <div id="bar-chart" style="display: flex; gap: 20px; justify-content: space-between; margin-bottom: 40px;">
+            <canvas id="bar-chart1"></canvas>
+            <canvas id="bar-chart2"></canvas>
+          </div>
+          <div style="display: flex; gap: 20px; justify-content: space-between; margin-bottom: 40px;">
+              <canvas id="bar-chart3"></canvas>
+              <canvas id="pie-chart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="pages/log/script.js"></script>
+</body>
+</html>

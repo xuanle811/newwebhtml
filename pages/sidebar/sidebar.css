@@ -1,0 +1,125 @@
+/* Sidebar tổng thể */
+.sider {
+  width: 230px;
+  height: 100vh;
+  background: #ffffff;
+  border-right: 1px solid #e5eaef;
+  padding: 24px;
+  box-sizing: border-box;
+  overflow-y: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* Tiêu đề đầu sidebar */
+.title-menu-container {
+  padding: 8px 0;
+  margin-bottom: 16px;
+}
+
+.title-menu-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #2a3547;
+}
+
+/* Danh sách menu */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  margin-bottom: 10px;
+}
+
+/* Tiêu đề như Dashboard / Log (không viền) */
+.submenu-title {
+  background: none;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: #2a3547;
+  cursor: pointer;
+  padding: 6px 10px;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+/* Các menu con (ít lùi hơn mặc định) */
+.submenu {
+  list-style: none;
+  padding-left: 6px;
+  margin-top: 2px;
+}
+
+/* Icon dùng chung
+.icon {
+  width: 20px;
+  height: 20px;
+} */
+
+.icon.small {
+  width: 14px;
+  height: 14px;
+}
+
+/* Nút Upload File */
+.action-btn {
+  background-color: #f4f4f4;
+  border: none;
+  padding: 6px 10px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 4px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #333;
+  transition: background 0.3s;
+  width: 103pt;
+  text-align: left;
+}
+
+.action-btn:hover {
+  background-color: #e0e0e0;
+}
+
+/* Nút Show Data nổi bật */
+.link-btn {
+  display: flex;
+  align-items: left;
+  gap: 8px;
+  padding: 10px 10px 10px 20px; /* top right bottom left */
+  background-color: #0dbd3f;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: background-color 0.3s ease;
+  margin-top: 6px;
+  width: 80pt;
+}
+
+.link-btn:hover {
+  background-color: #0b7205;
+}
+
+
+.image-icon {
+  width: 80px;
+  /* height: 40px; */
+  /* object-fit: contain; */
+  /* margin-right: 1px; */
+  vertical-align: middle;
+}
+
+.submenu-title.sub-item {
+  padding-left: 20px; /* Hoặc 16px tùy bạn */
+}

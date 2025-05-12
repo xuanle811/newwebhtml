@@ -1,0 +1,73 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 20px;
+  background: rgb(251, 251, 252);
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 15px;
+  position: relative;
+}
+
+.avatar-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.popover {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  z-index: 100;
+  padding: 16px;
+}
+
+.popover h3 {
+  margin: 0 0 8px;
+}
+
+.popover .profile-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.popover .profile-info img {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.popover .profile-info div {
+  line-height: 1.2;
+}
+
+.popover .btn-logout {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  background: white;
+  color: #1677ff;
+  border: 1px solid #1677ff;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.popover .btn-logout:hover {
+  background: #f0f6ff;
+}
